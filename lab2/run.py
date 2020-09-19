@@ -24,7 +24,7 @@ def process_feedback(filename):
 
 def process_feedbacks():
     
-    for feedback in os.listdir(feedpack_path):
+    for feedback in os.listdir(feedback_path):
         process_feedback(os.path.join(feedback_path, feedback))
 
 def main():
