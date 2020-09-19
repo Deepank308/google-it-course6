@@ -30,7 +30,8 @@ def process_feedbacks():
 def main():
     
     print('Posting feedbacks from {} folder'.format(feedback_path))
-    print('Posting to feedbacks to {}'.format(corpweb_feedback_url))
+    print('Posting feedbacks to {}'.format(corpweb_feedback_url))
+    
     process_feedbacks()
 
     print('Done... Exiting')
