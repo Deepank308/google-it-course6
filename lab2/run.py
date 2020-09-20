@@ -24,13 +24,14 @@ def process_feedback(filename):
 
 def process_feedbacks():
     
-    for feedback in os.listdir(feedpack_path):
+    for feedback in os.listdir(feedback_path):
         process_feedback(os.path.join(feedback_path, feedback))
 
 def main():
     
     print('Posting feedbacks from {} folder'.format(feedback_path))
-    print('Posting to feedbacks to {}'.format(corpweb_feedback_url))
+    print('Posting feedbacks to {}'.format(corpweb_feedback_url))
+    
     process_feedbacks()
 
     print('Done... Exiting')
